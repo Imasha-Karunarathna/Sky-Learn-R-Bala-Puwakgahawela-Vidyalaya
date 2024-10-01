@@ -1,0 +1,82 @@
+/* src/components/TextToSpeech.css */
+.full8{
+    
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #b90eb1;
+    background: linear-gradient(135deg, #d6a504, #6b0101, #d6a504);
+    overflow: hidden;
+    justify-content: center;
+}
+.tts-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #6b0101, #d6a504);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: rgb(243, 216, 66);
+    font-family: Arial, sans-serif;
+    align-content: center;
+}
+
+.tts-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ecb708;
+}
+
+.tts-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1rem;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.controls button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5622da;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #fa430b;
+}
+
+.language-selector {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.language-selector select {
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.translated-text {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.translated-text h3 {
+    margin-bottom: 10px;
+    color: #f3f6f8;
+}

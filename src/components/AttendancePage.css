@@ -1,0 +1,160 @@
+/* src/components/AttendancePage.css */
+.attendance-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #d6a504, #6b0101, #d6a504);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.a2{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color:#fae104;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #fae844;
+}
+
+.add-student-form {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    background-color: linear-gradient(135deg, #c5daf8, #18aae4, #0f29bd);
+}
+
+.student-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.add-student-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color:#fae104;
+    color: rgb(117, 19, 1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-student-btn:hover {
+    background-color: #d6ec0e;
+}
+
+.attendance-table {
+    width: 80%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attendance-table th,
+.attendance-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.attendance-table th {
+    background-color: #f3dd1b;
+    color: #0a0a0a;
+    font-weight: bold;
+}
+
+.attendance-table tr:nth-child(even) {
+    background-color: #f88400;
+}
+
+.status {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.status.present {
+    color: #0ae43d;
+}
+
+.status.absent {
+    color: #fa021b;
+}
+
+.toggle-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+    color: #050505;
+}
+
+.toggle-btn.present {
+    background-color: #0ae43d;
+}
+
+.toggle-btn.present:hover {
+    background-color: #0ae43d;
+}
+
+.toggle-btn.absent {
+    background-color: #fa021b;
+}
+
+.toggle-btn.absent:hover {
+    background-color: #fa021b;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.reset-btn,
+.clear-btn,
+.download-btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.reset-btn {
+    background-color: #e3f301;
+    color: #333;
+}
+
+.reset-btn:hover {
+    background-color: #e3f301;
+}
+
+.clear-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.clear-btn:hover {
+    background-color: #c0392b;
+}
+
+.download-btn {
+    background-color: #07fc6d;
+    color: #fff;
+}
+
+.download-btn:hover {
+    background-color: #27ae60;
+}

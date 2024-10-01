@@ -1,0 +1,98 @@
+/* QuizManagement.css */
+.full3 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #b90eb1;
+    background: linear-gradient(135deg, #d6a504, #6b0101, #d6a504,#6b0101,#d6a504,#6b0101);
+    overflow: hidden;
+}
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #6b0101,#d6a504 , #6b0101);
+    color: #6b0101;
+}
+
+.question-section h2,
+.results-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color:#6b0101;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.option-button {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option-button:hover {
+    background-color: #e0e0e0;
+}
+
+.option-button.selected {
+    background-color: #b6e412;
+    border-color: #f8f40a;
+}
+
+.timer-progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.timer {
+    font-size: 1rem;
+    color: #333;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.3s;
+}
+
+.next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #da2c0d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.next-button:hover {
+    background-color: #f03406;
+}
+
+.results-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}

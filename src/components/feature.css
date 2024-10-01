@@ -1,0 +1,139 @@
+.feature-page-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #b90eb1;
+    background: linear-gradient(35deg, #6b0101, #d6a504, #6b0101,#d6a504,#6b0101,#d6a504);
+    overflow: hidden;
+}
+
+.feature-page-header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-page-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: yellow;
+}
+
+.feature-page-header p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.feature-page-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.feature-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.feature-button {
+    background-color: #f3ef13;
+    border: none;
+    border-radius: 5px;
+    color: rgb(22, 21, 21);
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+/* Sequential animation for 11 buttons */
+.feature-button:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.feature-button:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.feature-button:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.feature-button:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.feature-button:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.feature-button:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.feature-button:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.feature-button:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.feature-button:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.feature-button:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.feature-button:nth-child(11) {
+    animation-delay: 1s;
+}
+
+.feature-button:hover {
+    background-color: #940000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+.feature-button:active {
+    transform: scale(0.98);
+}
+
+/* Slide-in animation for the button */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.feature-page-footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.homebtn{
+    color:#d6a504;
+    padding: 2%;
+    margin-bottom:10px;
+    align-self: self-end;
+
+}

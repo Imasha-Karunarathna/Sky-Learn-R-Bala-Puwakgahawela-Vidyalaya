@@ -1,0 +1,57 @@
+/* src/components/Whiteboard.css */
+.whiteboard-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #6b0101;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.whiteboard-container h2 {
+    color: #e2d303;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.toolbar {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-picker {
+    padding: 5px;
+}
+
+.brush-size-slider {
+    width: 100px;
+}
+
+.clear-btn,
+.download-btn {
+    padding: 8px 15px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #ffd000;
+    color: #6b0101;
+    transition: background-color 0.3s;
+}
+
+.clear-btn:hover,
+.download-btn:hover {
+    background-color: #ffd000;
+}
+
+canvas {
+    border: 2px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    cursor: crosshair;
+}

@@ -1,0 +1,111 @@
+.full {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #b90eb1;
+    background: linear-gradient(135deg, #d6a504, #6b0101, #d6a504, #6b0101);
+    overflow: hidden;
+}
+.common-test {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #6b0101, #d6a504, #6b0101);
+    justify-content: center;
+}
+
+.subject-selection,
+.difficulty-selection,
+.question-container,
+.results-container {
+    margin-bottom: 20px;
+    text-align: center;
+    color:#d60404;
+}
+
+.subject-options,
+.difficulty-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.subject-card,
+.difficulty-options button {
+    background-color: #ffa600;
+    color: rgba(245, 10, 10, 0.712);
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.subject-card:hover,
+.difficulty-options button:hover {
+    transform: scale(1.05);
+    background-color: #b31b00;
+}
+
+.difficulty-options button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+.question-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #f3f4f6;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options-container button {
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: #f5e611da;
+    color: rgba(231, 9, 9, 0.815);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.options-container button:hover {
+    background-color: #961313d2;
+}
+
+.results-container {
+    font-size: 1.5em;
+    color: #40e70c;
+}
+
+.results-actions button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.results-actions button:hover {
+    background-color: #e0a800;
+}

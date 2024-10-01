@@ -1,0 +1,67 @@
+.full2{
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #b90eb1;
+    background: linear-gradient(135deg, #d6a504, #6b0101, #d6a504,#6b0101,#d6a504,#6b0101);
+    overflow: hidden;
+}
+.activity-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    justify-items: center;
+    margin-top: 5%;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: linear-gradient(135deg, #6b0101, #d6a504, #6b0101);
+    align-items: center;
+}
+
+.activity-title {
+    font-size: 2em;
+    color: #6b0101;
+    margin-bottom: 20px;
+}
+
+.activity-description {
+    font-size: 1.2em;
+    color: #e3f120;
+    margin-bottom: 30px;
+}
+
+.activity-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.activity-btn {
+    padding: 15px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #6b0101;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.activity-btn:hover {
+    background-color: #940000;
+    transform: translateY(-3px);
+}
+
+.activity-btn:active {
+    background-color: #940000;
+    transform: translateY(-1px);
+}
+
+@media (min-width: 600px) {
+    .activity-buttons {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

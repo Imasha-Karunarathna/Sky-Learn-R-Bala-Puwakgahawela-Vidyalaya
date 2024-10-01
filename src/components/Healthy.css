@@ -1,0 +1,15 @@
+.healthy-activities-page-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #044299, #1a1a1a, #010e0a);
+}
+
+.activities-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activity-card {
+    border: 1px solid #ddd;
+    border-radius: 8;
+}

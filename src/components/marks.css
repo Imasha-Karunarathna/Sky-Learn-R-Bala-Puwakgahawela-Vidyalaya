@@ -1,0 +1,178 @@
+.full1 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #b90eb1;
+    background: linear-gradient(135deg, #d6a504, #6b0101, #d6a504);
+    overflow: hidden;
+}
+
+.marks-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d7dbdf;
+    background: linear-gradient(135deg, #6b0101, #d6a504, #6b0101);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(193, 245, 50, 0.1);
+}
+
+.marks-container h2 {
+    text-align: center;
+    color: #f3f706;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.marks-entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    margin-bottom: 15px;
+}
+
+.marks-entry input[type="text"],
+.marks-entry input[type="number"],
+.marks-entry select {
+    padding: 10px;
+    width: 50%;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f3f706;
+    transition: width 0.3s;
+}
+.download-report-btn,
+.download-report-btn,
+.clear-data-btn,
+.marks-entry button {
+    padding: 10px 15px;
+    background-color: #6b0101;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, padding 0.3s;
+    margin: 10px;
+}
+
+.marks-entry button:hover {
+    background-color: #388E3C;
+}
+
+.marks-chart {
+    margin: 20px 0;
+    padding: 0;
+    overflow-x: auto; 
+    background-color: #388E3C;/* Ensure the chart is scrollable on small screens */
+}
+
+.rankings,
+.averages {
+    margin-top: 30px;
+    background-color: #f3f706;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rankings ul,
+.averages ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ranking-item,
+.average-item {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ranking-item:nth-child(odd),
+.average-item:nth-child(odd) {
+    background-color: #f3f706;
+}
+
+.ranking-position {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.ranking-name {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.ranking-total,
+.average-value {
+    font-weight: bold;
+    color: #6b0101;
+}
+
+.averages-section {
+    margin-top: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .marks-container {
+        padding: 15px;
+    }
+
+    .marks-entry input[type="text"],
+    .marks-entry input[type="number"],
+    .marks-entry select {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .marks-entry button {
+        padding: 10px;
+    }
+
+    .ranking-item,
+    .average-item {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start;
+    }
+
+    .ranking-position {
+        font-size: 1em;
+    }
+
+    .marks-container h2 {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .marks-container {
+        padding: 10px;
+    }
+
+    .marks-entry input[type="text"],
+    .marks-entry input[type="number"],
+    .marks-entry select {
+        padding: 8px;
+    }
+
+    .marks-entry button {
+        padding: 8px;
+    }
+
+    .marks-container h2 {
+        font-size: 1em;
+    }
+
+    .ranking-position {
+        font-size: 0.9em;
+    }
+}

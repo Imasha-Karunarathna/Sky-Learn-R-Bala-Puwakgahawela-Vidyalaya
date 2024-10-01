@@ -1,0 +1,90 @@
+/* src/components/timerPage.css */
+.timer-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #d6a504, #6b0101, #d6a504);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+.a1 {
+    margin-bottom: 20px;
+    color:#fffb09;
+    font-size: 2.5rem;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color:#fffb09;
+    font-size: 2.5rem;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #d6a504, #f04e1c8c, #d6a504);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.timer-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #faf606;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.timer-display {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffee03;
+}
+
+.timer-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn {
+    background-color: #063511;
+    color: #fff;
+}
+
+.start-btn:hover {
+    background-color: #218838;
+}
+
+.stop-btn {
+    background-color: #ec0a21;
+    color: #fff;
+}
+
+.stop-btn:hover {
+    background-color: #c82333;
+}
+
+.reset-btn {
+    background-color: #f5be18;
+    color: #fff;
+}
+
+.reset-btn:hover {
+    background-color: #e0a800;
+}

@@ -1,0 +1,88 @@
+.feedback-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #010141;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2072a8;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.feedback-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feedback-form-container input,
+.feedback-form-container textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+/* Remove blue color from the name field */
+.feedback-form-container input[name="name"] {
+    color: #333; /* Set text color to dark gray or black */
+    background-color: #fff; /* Ensure background is white for consistency */
+}
+
+/* Other fields retain their default color behavior */
+.feedback-form-container input:focus,
+.feedback-form-container textarea:focus {
+    border-color: #f7f8fa;
+    outline: none;
+}
+
+.feedback-form-container button {
+    padding: 12px;
+    background-color: #f8f9fa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.feedback-form-container button:hover {
+    background-color: #0056b3;
+}
+
+.feedback-form-container button:active {
+    transform: scale(0.98);
+}
+
+.feedback-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.feedback-item {
+    background: #e0f7fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007bff;
+}
+
+.feedback-item strong {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.feedback-item p {
+    margin: 5px 0 0;
+    color: #555;
+}

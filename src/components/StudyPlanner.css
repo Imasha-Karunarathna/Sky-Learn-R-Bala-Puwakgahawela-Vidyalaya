@@ -1,0 +1,70 @@
+.full6{
+    background: linear-gradient(135deg, #d6a504, #6b0101, #d6a504);
+}
+.study-planner-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: linear-gradient(135deg, #6b0101, #d6a504, #6b0101,#d6a504);
+    color: rgb(179, 250, 47);
+}
+
+.study-planner-container h1 {
+    color: aliceblue;
+}
+
+.study-planner-container h2 {
+    color: rgb(238, 241, 31);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar-section,
+.task-list-section {
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #fce305;
+    background-color:#fce305 ;
+    color:#ffffff;
+    border-radius: 5px;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #75210ce5;
+    color: #fce305;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+ul li input[type="checkbox"] {
+    margin-right: 10px;
+    color: #ccc;
+}

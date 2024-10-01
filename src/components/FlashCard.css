@@ -1,0 +1,165 @@
+.flashcards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #cde92f;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #d6a504, #6b0101, #d6a504);
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.flashcards-title {
+    font-size: 2.5rem;
+    color: #eef129;
+    margin-bottom: 2rem;
+}
+
+.flashcard {
+    perspective: 1000px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.flashcard-front,
+.flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease;
+    border-radius: 10px;
+    background-color: rgb(230, 241, 72);
+    color: #333;
+    z-index: 1;
+}
+
+/* Front card */
+.flashcard-front {
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+
+/* Back card */
+.flashcard-back {
+    transform: rotateY(180deg);
+    z-index: 1;
+    background-color: #9172e7;
+    color: white;
+}
+
+/* When the flashcard is flipped */
+.flipped .flashcard-front {
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+
+.flipped .flashcard-back {
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.flashcard-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.flashcard-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #b0d657;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.flashcard-btn:hover {
+    background-color: #0056b3;
+}
+
+.study-modes {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.study-mode-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    color: #007bff;
+    background-color: white;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.study-mode-btn.active,
+.study-mode-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.progress-monitoring {
+    font-size: 1.2rem;
+    color: #f4f8f8;
+}
+
+.next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    color: white;
+    background-color: #0d0d0e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.next-btn:hover {
+    background-color: #d3eef3;
+}
+
+#grade {
+    background-color: #f7e11b;
+    color: #333;
+    margin-left: 10px;
+}
+
+#grade option {
+    background-color: #f5e949;
+    color: #000000;
+}
+
+#grade:hover,
+#grade:focus {
+    border-color: #fffcfc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.flashcards-description {
+    color: #cde92f;
+}
+
+.flashcard-front {
+    background-color: #bcff20;
+}
+
+.flashcard-back {
+    background-color: #eef11f;
+}

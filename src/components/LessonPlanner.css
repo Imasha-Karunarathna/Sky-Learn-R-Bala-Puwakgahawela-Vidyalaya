@@ -1,0 +1,95 @@
+/* src/components/LessonPlanner.css */
+
+.lesson-planner {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.lesson-planner h2 {
+    color: #fce307;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect for all buttons */
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+.delete-btn1:hover,
+.edit-btn1:hover,
+.download-btn1:hover {
+    color: white; /* Override color if needed */
+}
+
+.react-quill {
+    height: 200px;
+}
+
+.form-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+select {
+    margin-right: 10px;
+}
+
+.search-filter {
+    margin-bottom: 20px;
+}
+
+.plans-list {
+    list-style: none;
+    padding: 0;
+}
+
+.plan-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.plan-controls {
+    margin-top: 10px;
+}
+
+.delete-btn1 {
+    background-color: rgba(250, 4, 4, 0.904);
+    color: white;
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.edit-btn1 {
+    background-color: rgba(10, 235, 10, 0.87);
+    color: white;
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.download-btn1 {
+    background-color: rgba(148, 4, 4, 0.979);
+    color: white;
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
