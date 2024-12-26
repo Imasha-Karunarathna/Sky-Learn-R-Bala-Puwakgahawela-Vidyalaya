@@ -5,19 +5,20 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(135deg, #d6a504, #6b0101, #d6a504);
+    background: linear-gradient(35deg, #6b0101, #d8d2cb, #6b0101, #bdbbb4, #6b0101, #ecebe7);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
 }
+
 .a1 {
     margin-bottom: 20px;
-    color:#fffb09;
+    color: #fffb09;
     font-size: 2.5rem;
 }
 
 h1 {
     margin-bottom: 20px;
-    color:#fffb09;
+    color: #fffb09;
     font-size: 2.5rem;
 }
 

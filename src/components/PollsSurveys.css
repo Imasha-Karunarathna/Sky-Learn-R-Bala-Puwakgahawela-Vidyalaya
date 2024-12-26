@@ -4,9 +4,10 @@
     flex-direction: column;
     min-height: 100vh;
     background-color: #b90eb1;
-    background: linear-gradient(135deg, #d6a504, #6b0101, #d6a504);
+    background: linear-gradient(35deg, #6b0101, #d8d2cb, #6b0101, #bdbbb4, #6b0101, #ecebe7);
     overflow: hidden;
 }
+
 .polls-surveys {
     padding: 20px;
     max-width: 800px;

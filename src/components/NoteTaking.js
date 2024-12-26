@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import './NoteTaking.css';
-import { Tooltip } from 'react-tooltip';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 
@@ -72,26 +71,26 @@ const NoteTaking = () => {
     };
     return (
         <div className='full-a'>
-        <div className="note-taking-container">
-            <h1 className="aa">Note-Taking Tools</h1>
+            <div className="note-taking-container">
+                <h1 className="aa">Note-Taking Tools</h1>
 
-            <div className="editor-section">
-                <h2 className='bb'>Notes</h2>
-                <ReactQuill
-                    value={note}
-                    onChange={handleNoteChange}
-                    placeholder="Start typing your notes here..."
-                />
-                <button onClick={handleClearNote}>Clear Note</button>
-                <button onClick={handleDownloadNote}>Download Report</button>
+                <div className="editor-section">
+                    <h2 className='bb'>Notes</h2>
+                    <ReactQuill
+                        value={note}
+                        onChange={handleNoteChange}
+                        placeholder="Start typing your notes here..."
+                    />
+                    <button onClick={handleClearNote}>Clear Note</button>
+                    <button onClick={handleDownloadNote}>Download Report</button>
+                </div>
+
+
+
+
+
+
             </div>
-
-           
-
-            
-                
-            
-        </div>
         </div>
     );
 };

@@ -4,7 +4,7 @@
     flex-direction: column;
     min-height: 100vh;
     background-color: #b90eb1;
-    background: linear-gradient(135deg, #d6a504, #6b0101, #d6a504);
+    background: linear-gradient(35deg, #6b0101, #d8d2cb, #6b0101, #bdbbb4, #6b0101, #ecebe7);
     overflow: hidden;
 }
 
@@ -29,7 +29,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
     margin-bottom: 15px;
 }
 
@@ -44,6 +45,7 @@
     background-color: #f3f706;
     transition: width 0.3s;
 }
+
 .download-report-btn,
 .download-report-btn,
 .clear-data-btn,
@@ -65,8 +67,9 @@
 .marks-chart {
     margin: 20px 0;
     padding: 0;
-    overflow-x: auto; 
-    background-color: #388E3C;/* Ensure the chart is scrollable on small screens */
+    overflow-x: auto;
+    background-color: #388E3C;
+    /* Ensure the chart is scrollable on small screens */
 }
 
 .rankings,
@@ -140,7 +143,8 @@
 
     .ranking-item,
     .average-item {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
         align-items: flex-start;
     }
 

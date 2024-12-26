@@ -5,15 +5,15 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(135deg, #d6a504, #6b0101, #d6a504);
+    background: linear-gradient(35deg, #6b0101, #d8d2cb, #6b0101, #bdbbb4, #6b0101, #ecebe7);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
 }
 
-.a2{
+.a2 {
     margin-bottom: 20px;
     font-size: 2.5rem;
-    color:#fae104;
+    color: #fae104;
 }
 
 h1 {
@@ -41,7 +41,7 @@ h1 {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background-color:#fae104;
+    background-color: #fae104;
     color: rgb(117, 19, 1);
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -129,7 +129,7 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    
+
 }
 
 .reset-btn {
